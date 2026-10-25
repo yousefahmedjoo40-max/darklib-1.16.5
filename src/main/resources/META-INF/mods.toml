@@ -1,0 +1,30 @@
+modLoader="javafml"
+loaderVersion="[36,)"
+license="MIT"
+issueTrackerURL="https://github.com/Egyptia26/Darklib/issues"
+
+[[mods]]
+modId="darklib"
+version="${file.jarVersion}"
+displayName="Darklib"
+displayURL="https://github.com/Egyptia26/Darklib"
+authors="Egyptia26"
+description='''
+Darklib - a dark-night library for Forge 1.16.5.
+Terrifying darkness at night, normal during the day.
+Other mods can depend on it and use DarklibAPI.
+'''
+
+[[dependencies.darklib]]
+    modId="forge"
+    mandatory=true
+    versionRange="[36.2.0,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.darklib]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.5]"
+    ordering="NONE"
+    side="BOTH"

@@ -1,0 +1,33 @@
+=====================================================
+ Darklib  -  Minecraft 1.16.5   (by Egyptia26)
+=====================================================
+
+مهم: كل مود في فولدر لوحده. ممنوع تحط مودين في نفس الفولدر
+(ده اللي كان بيعمل خطأ "mods.toml missing metadata for modid ...").
+
+الخطوات:
+
+1) نزّل Forge MDK الرسمي للإصدار 1.16.5 من:
+   https://files.minecraftforge.net/net/minecraftforge/forge/index_1.16.5.html
+   (اضغط Mdk تحت Installer)
+
+2) فك الـ MDK في فولدر مؤقت وانسخ منه 3 حاجات بس:
+      gradlew
+      gradlew.bat
+      فولدر gradle
+   وحطهم جوه الفولدر ده (جنب build.gradle).
+   متنسخش أي حاجة تانية من الـ MDK.
+
+3) لازم يكون عندك Java 8 (أو 17)  (JAVA_HOME بتاعه).
+
+4) افتح CMD جوه الفولدر ده واكتب:
+      gradlew.bat clean build
+
+5) الملف الجاهز هتلاقيه في:
+      build\libs\darklib-1.16.5-1.1.0.jar
+   حطه في فولدر mods في ماينكرافت.
+
+6) للتأكد: افتح الـ jar ببرنامج 7-Zip. لازم تلاقي جواه فولدر
+   com/darklib بس.
+
+لو حصل أي خطأ: ابعت أول سطر فيه كلمة error أو FAILED بس.
